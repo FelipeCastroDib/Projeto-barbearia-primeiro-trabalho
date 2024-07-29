@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>GN Barberaria - Sua Barberaria!</title>
   </head>
@@ -24,98 +26,166 @@
     <div class="bg-home">
       <header>
         <nav class="header-content container">
-          <div class="header-icons">
-            <a href="#">
+          <div class="header-icons" data-aos="fade-down">
+            <a
+              href="https://www.instagram.com/gn.barbearia_10/"
+              target="_blank"
+            >
               <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
             <a href="#">
-                <i class="fa-brands fa-facebook fa-2x"></i>
-              </a>
-              <a href="#">
-                <i class="fa-brands fa-tiktok fa-2x"></i>
-              </a>
-          </div>
-
-          <div class="header-logo">
-            <img src="assets/logo.svg" alt="logo da Barberaria"/>
-          </div>
-
-          <div>
-            <a class="header-button" href="#">
-                Agendar horário
+              <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-tiktok fa-2x"></i>
             </a>
           </div>
 
+          <div class="header-logo" data-aos="fade-up" data-aos-delay="400">
+            <img
+              data-aos="flip-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              src="assets/logo.svg"
+              alt="logo da Barberaria"
+            />
+          </div>
+
+          <div data-aos="fade-down">
+            <a class="header-button" href="#"> Agendar horário </a>
+          </div>
         </nav>
 
-        <main class="hero container">
-            <h1>TODO NOSSO CUIDADO PARA MANTER SEU ESTILO.</h1>
-            <p>Horário de funcionamento: 08:00 ás 18:00</p>
-            <a href="#" class="button-contact" target="_blank">
-                Agendar Horário
-            </a>
+        <main class="hero container" data-aos="fade-up" data-aos-delay="400">
+          <h1>TODO NOSSO CUIDADO PARA MANTER SEU ESTILO.</h1>
+          <p>Horário de funcionamento: 08:00 ás 20:00</p>
+          <a
+            href="https://api.whatsapp.com/send?phone=554888060384&text=Quero%20fazer%20um%20agendamento%20hoje!"
+            class="button-contact"
+            target="_blank"
+          >
+            Agendar Horário
+          </a>
         </main>
-
       </header>
     </div>
 
+    <!-- ABOUT-->
+
     <section class="about">
-        <div class="container about-content">
-            <div>
-                <img src="assets/images.svg" alt="Imagem sobre a barbearia">
-            </div>
+      <div class="container about-content">
+        <div data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/images.svg" alt="Imagem sobre a barbearia" />
+        </div>
 
-            <div class="about-description">
-                <h2>Sobre</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque blanditiis, quia similique iste maxime dicta. Assumenda, nemo. Enim dignissimos eius consequatur voluptates non mollitia corporis! Quo modi facilis quidem.</p>
-                <p>Horário de funcionamento: <strong>08:00 ás 18:00</strong></p>
-            </div>
+        <div
+          class="about-description"
+          data-aos="zoom-out-left"
+          data-aos-delay="250"
+        >
+          <h2>Sobre</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            cumque blanditiis, quia similique iste maxime dicta. Assumenda,
+            nemo. Enim dignissimos eius consequatur voluptates non mollitia
+            corporis! Quo modi facilis quidem.
+          </p>
+          <p>Horário de funcionamento: <strong>08:00 ás 18:00</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES-->
+
+    <section class="services">
+      <div class="services-content container">
+        <h2>Serviços</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          laboriosam officiis eum, consequatur maiores exercitationem magnam
+          placeat quaerat soluta. Facilis ipsam excepturi libero harum eveniet
+          nostrum qui ratione obcaecati nisi.
+        </p>
+      </div>
+      <section class="haircuts">
+
+        <div class="haircut" data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/corte1.png" alt="Corte normal" />
+
+          <div class="haircut-info">
+            <strong>Corte normal</strong>
+            <button>R$ 35,00</button>
+          </div>
+        </div>
+
+        <div class="haircut" data-aos="fade-up" data-aos-delay="250">
+          <img src="assets/corte2.png" alt="Barba Completa" />
+
+          <div class="haircut-info">
+            <strong>Barba completa</strong>
+            <button>R$ 40,00</button>
+          </div>
+        </div>
+
+        <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/corte3.png" alt="Corte e barba" />
+
+          <div class="haircut-info">
+            <strong>Corte e Barba</strong>
+            <button>R$ 85,00</button>
+          </div>
         </div>
       </section>
+    </section>
 
-      <section class="services">
-        <div class="services-content container">
-            <h2>Serviços</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam officiis eum, consequatur maiores exercitationem magnam placeat quaerat soluta. Facilis ipsam excepturi libero harum eveniet nostrum qui ratione obcaecati nisi.</p>
+    <!-- FOOTER -->
 
-        </div>
-          <section class="haircuts">
+    <div class="services">
+      <h2>Venha conhecer</h2>
+    </div>
 
-            <div class="haircut">
-                <img src="assets/corte1.png" alt="Corte normal"/>
+    <iframe
+      width="100%"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4202.024617833244!2d-48.651645360023146!3d-27.67194417754916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952735fad7f0cff9%3A0xa9db6a0433ac4355!2sGN%20BARBEARIA!5e0!3m2!1spt-BR!2sbr!4v1722258932527!5m2!1spt-BR!2sbr"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
 
-                <div class="haircut-info">
-                    <strong>Corte normal</strong>
-                    <button>
-                        R$ 35,00
-                    </button>
-                </div>
-             </div>
+    <footer class="footer">
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/gn.barbearia_10/" target="_blank">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-tiktok fa-2x"></i>
+        </a>
+      </div>
 
-             <div class="haircut">
-                <img src="assets/corte2.png" alt="Barba Completa"/>
+      <div>
+        <img src="assets/logo.svg" alt="Logo barbearia" />
+      </div>
+      <p>Copyright 2024 | GN Barbearia - Todos os direitos reservados.</p>
+    </footer>
 
-                <div class="haircut-info">
-                    <strong>Barba completa</strong>
-                    <button>
-                        R$ 40,00
-                    </button>
-                </div>
-             </div>
+    <!--Button Whats-->
 
-             <div class="haircut">
-                <img src="assets/corte3.png" alt="Corte e barba"/>
+    <a
+      href="https://api.whatsapp.com/send?phone=554888060384&text=Quero%20fazer%20um%20agendamento%20hoje!"
+      class="btn-whatsapp"
+      target="_blank"
+      data-aos="zoom-in-up" data-aos-delay="400"
+    >
+      <img src="assets/whatssapp.svg" alt="botao whatsapp" />
+      <span class="tooltip-text">Agende seu horário</span>
+    </a>
 
-                <div class="haircut-info">
-                    <strong>Corte e Barba</strong>
-                    <button>
-                        R$ 85,00
-                    </button>
-                </div>
-             </div>
-
-        </section>
-      </section>
-
+    <script src="script.js"></script>
   </body>
 </html>
